@@ -1,0 +1,423 @@
+
+/* ========================================
+   MANNMUKTI - EVENT PAGES
+   Shared styles for Garba and Gala
+======================================== */
+
+
+/* Event hero */
+
+.event-hero {
+  padding-top: 55px;
+  padding-bottom: 80px;
+}
+
+.event-back {
+  display: inline-block;
+  margin-bottom: 65px;
+  font-size: 13px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 5px;
+}
+
+.event-back:hover {
+  color: var(--orange);
+}
+
+.event-hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(55px, 7vw, 100px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+  margin: 20px 0;
+}
+
+.event-hero h1 em {
+  color: var(--orange);
+  font-weight: 400;
+}
+
+.gala-event-page h1 em {
+  color: var(--teal);
+}
+
+.event-intro {
+  font-size: 17px;
+  line-height: 1.85;
+  color: #625c52;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+
+/* Large event graphics */
+
+.event-banner {
+  height: 430px;
+  margin: 0;
+}
+
+.event-banner .garba-graphic-text {
+  font-size: clamp(75px, 10vw, 125px);
+}
+
+.event-banner .gala-graphic-text {
+  font-size: clamp(80px, 10vw, 125px);
+}
+
+.event-banner .garba-graphic-text i {
+  font-size: 1.1em;
+}
+
+
+/* Event information */
+
+.event-information {
+  padding-top: 55px;
+  padding-bottom: 95px;
+}
+
+.event-info-heading h2,
+.event-detail-grid h2,
+.event-gallery h2 {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 65px);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 20px 0 40px;
+}
+
+.event-information h2 em,
+.event-gallery h2 em {
+  color: var(--orange);
+  font-weight: 400;
+}
+
+
+/* Date, time, location */
+
+.event-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 45px 0 110px;
+}
+
+.event-facts > div {
+  border-top: 1px solid #cbbdae;
+  padding-top: 22px;
+}
+
+.event-facts span {
+  color: #a8583a;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+}
+
+.event-facts h3 {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 400;
+  margin: 16px 0;
+}
+
+
+/* About the event */
+
+.event-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  border-top: 1px solid #cbbdae;
+  padding-top: 60px;
+}
+
+.event-detail-text p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #625c52;
+  margin: 0 0 25px;
+}
+
+
+/* Photo gallery */
+
+.event-gallery {
+  padding-top: 90px;
+  padding-bottom: 110px;
+  background: #eee4d7;
+  max-width: none;
+}
+
+.event-gallery > * {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 45px;
+}
+
+.event-photo-placeholder {
+  aspect-ratio: 4 / 5;
+  background: #e2b49e;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  text-align: center;
+  color: #875540;
+  font-family: var(--serif);
+  font-size: 20px;
+}
+
+.event-photo-placeholder:nth-child(2) {
+  background: #abb8a9;
+  color: #355a53;
+}
+
+.event-photo-placeholder:nth-child(3) {
+  background: #e4c879;
+  color: #795b30;
+}
+
+.event-photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Registration section */
+
+.event-registration {
+  text-align: center;
+  padding: 100px 0 110px;
+}
+
+.garba-registration {
+  background: var(--orange);
+  color: #fff6e7;
+}
+
+.gala-registration {
+  background: var(--teal);
+  color: #fff6e7;
+}
+
+.event-registration .section-index {
+  color: #ffe1b1;
+}
+
+.event-registration h2 {
+  font-family: var(--serif);
+  font-size: clamp(45px, 6vw, 80px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin: 25px auto;
+  max-width: 800px;
+}
+
+.event-registration h2 em {
+  color: #ffdb9c;
+}
+
+.event-registration p {
+  max-width: 570px;
+  margin: 0 auto 35px;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.event-registration .button {
+  min-width: 200px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 760px) {
+
+  .event-hero {
+    padding-top: 35px;
+    padding-bottom: 55px;
+  }
+
+  .event-back {
+    margin-bottom: 45px;
+  }
+
+  .event-banner {
+    height: 280px;
+  }
+
+  .event-banner .garba-graphic-text,
+  .event-banner .gala-graphic-text {
+    font-size: 65px;
+  }
+
+  .event-facts {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 65px;
+  }
+
+  .event-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .event-photo-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .event-registration {
+    padding: 75px 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .event-photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-banner {
+    height: 240px;
+  }
+}
+
+
+
+/* ========================================
+   DONATION PAGE
+======================================== */
+
+.donation-page {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding-top: 55px;
+  padding-bottom: 120px;
+  text-align: left;
+}
+
+/* Headings */
+
+.donation-page h1,
+.donation-page h2,
+.donation-page h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+}
+
+.donation-page h1 {
+  font-size: clamp(55px, 7vw, 100px);
+  margin: 20px 0;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.donation-page h1 em {
+  color: var(--orange);
+}
+
+/* Paragraphs */
+
+.donation-page p {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.8;
+  color: #625c52;
+}
+
+/* Center introductory text */
+
+.donation-page .event-intro {
+  max-width: 600px;
+  margin: 0 0 50px;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+/* Donation information */
+
+.donation-page .event-information {
+  padding: 40px 0;
+}
+
+.donation-page .zelle-details {
+  background: var(--paper);
+  padding: 24px;
+  margin: 25px auto;
+  max-width: 500px;
+}
+
+.donation-page .zelle-details h3 {
+  font-size: 25px;
+  overflow-wrap: anywhere;
+}
+
+/* QR code */
+
+.donation-page img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 8px;
+}
+
+/* Back to home link */
+
+.donation-page .event-back {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+/* Mobile */
+
+@media (max-width: 760px) {
+  .donation-page {
+    padding-top: 35px;
+    padding-bottom: 80px;
+  }
+
+  .donation-page .zelle-details h3 {
+    font-size: 20px;
+  }
+}
+
+/* Keep the donation introduction left-aligned */
+
+.donation-page .donation-header {
+  text-align: left;
+  width: 100%;
+}
+
+.donation-page .donation-header .event-intro {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Keep Zelle details and QR code centered */
+
+.donation-page .event-information {
+  text-align: center;
+}
+
+/* Center the QR code */
+
+.donation-page .event-information img {
+  display: block;
+  margin: 30px auto;
+}
