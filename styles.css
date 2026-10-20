@@ -1334,3 +1334,19 @@ footer a {
     height: 165px;
   }
 }
+
+/* MannMukti kite logo */
+
+.brand-logo {
+  width: 42px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

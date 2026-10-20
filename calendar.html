@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Calendar | MannMukti UIUC</title>
+
+  <!-- Same fonts as the homepage -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Existing website styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="event-pages.css">
+
+  <!-- Existing website interactions -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Announcement banner -->
+  <div class="announcement">
+    <span class="sparkle">✳</span>
+    A student-led community at the University of Illinois Urbana-Champaign
+    <span class="sparkle">✳</span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+
+    <a href="index.html" class="brand">
+        <img
+            src="images/kite-logo.png"
+            alt=""
+            class="brand-logo"
+            aria-hidden="true"
+        >
+      <span class="brand-name">
+        mannmukti
+        <span class="brand-location"> / illinois</span>
+      </span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      aria-label="Open navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html#about">Our story</a>
+      <a href="index.html#garba">Garba</a>
+      <a href="index.html#gala">Gala</a>
+      <a href="index.html#leadership">Leadership</a>
+      <a href="index.html#calendar">Calendar</a>
+      <a href="index.html#connect" class="nav-pill">
+        Get involved <span>↗</span>
+      </a>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- Calendar introduction -->
+    <section class="calendar-page section-shell">
+
+      <a href="index.html#calendar" class="event-back">
+        ← Back to home
+      </a>
+
+      <div class="section-index">COME HANG OUT</div>
+
+      <h1>What's <em>happening.</em></h1>
+
+      <p class="calendar-description">
+        From meetings and cultural celebrations to
+        fundraisers and community events, there's always
+        something happening at MannMukti UIUC.
+        Find out what's coming up and join us!
+      </p>
+
+      <!-- Embedded Google Calendar -->
+      <div class="calendar-embed-container">
+
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=536a60a84b079176fd64e56b8c0c61854199c93d55028a72fd42b815df0f5c5e%40group.calendar.google.com&amp;ctz=America%2FChicago"
+          title="MannMukti UIUC Events Calendar"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          loading="lazy">
+        </iframe>
+
+      </div>
+
+      <p class="calendar-note">
+        Check back regularly for upcoming events and updates.
+      </p>
+
+    </section>
+
+  </main>
+
+  <!-- Same footer as homepage -->
+  <footer>
+    <div class="footer-content section-shell">
+
+      <div>
+        <div class="footer-brand">
+          mannmukti<span>✳</span>
+        </div>
+
+        <p>
+          University of Illinois Urbana-Champaign<br>
+          A little more room to be ourselves.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <a href="index.html">Back to homepage ↑</a>
+
+        <p>
+          Made with care in Champaign-Urbana.<br>
+          © <span id="year">2026</span> MannMukti at Illinois
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <div
+    id="placeholder-toast"
+    class="placeholder-toast"
+    role="status"
+    aria-live="polite">
+  </div>
+
+</body>
+</html>
