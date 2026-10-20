@@ -288,13 +288,15 @@ button {
 }
 
 .hero-photo-frame {
-  width:min(75%,340px);
-  height:365px;
-  background:#f2cbb4;
-  padding:12px;
-  transform:rotate(5deg);
-  box-shadow:14px 17px 0 #e9ddc8;
-  z-index:2
+  width: min(70%, 320px);
+  height: 365px;
+  background: #f2cbb4;
+  padding: 0;
+  transform: rotate(5deg);
+  box-shadow: 14px 17px 0 #e9ddc8;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
 }
 
 .photo-placeholder {
@@ -325,9 +327,11 @@ button {
 }
 
 .hero-photo-frame img {
-  width:100%;
-  height:100%;
-  object-fit:cover
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .art-sticker {
@@ -338,11 +342,12 @@ button {
 }
 
 .sticker-top {
-  font-size:20px;
-  top:11px;
-  right:2%;
-  transform:rotate(9deg);
-  color:#b24e35
+  font-size: 20px;
+  top: 0;
+  right: 0;
+  transform: rotate(9deg);
+  color: #b24e35;
+  z-index: 5;
 }
 
 .sticker-bottom {
@@ -361,18 +366,18 @@ button {
 }
 
 .hero-flower {
-  position:absolute;
-  z-index:3;
-  color:var(--yellow);
-  font-size:80px;
-  right:-25px;
-  bottom:8px;
-  transform:rotate(15deg)
+  position: absolute;
+  z-index: 5;
+  color: var(--yellow);
+  font-size: 80px;
+  right: 0;
+  bottom: 0;
+  transform: rotate(15deg);
 }
 
 .hero-side-note {
   position:absolute;
-  right:24px;
+  right:0px;
   top:49%;
   writing-mode:vertical-rl;
   font-size:9px;
@@ -815,8 +820,6 @@ button {
   text-align:center;
   font-size:29px;
   line-height:1.1;
-  transform:rotate(-7deg);
-  opacity:.7
 }
 
 .leader-photo img {
@@ -1291,26 +1294,6 @@ footer a {
     width: 100%;
     max-width: 260px;
   }
-}
-
-/* Leadership photos - remove tint and rotation */
-
-.leader-photo {
-  background: transparent;
-  overflow: hidden;
-  height: 260px;
-}
-
-.leader-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  /* Remove rotation and color effects */
-  transform: none;
-  filter: none;
-  opacity: 1;
-  mix-blend-mode: normal;
 }
 
 /* Remove colored backgrounds */
