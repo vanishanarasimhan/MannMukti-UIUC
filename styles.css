@@ -1,10 +1,13 @@
 :root {
   --cream:#f8f3e9;
   --ink:#2e2c28;
-  --orange:#e9754e;
-  --teal:#235b58;
-  --pink:#f2c6ba;
-  --yellow:#efce79;
+  --navy:#0b2d5c;
+  --mid-blue:#3274a1;
+  --light-blue:#a9d6e5;
+  --orange:var(--mid-blue);
+  --teal:var(--navy);
+  --pink:var(--light-blue);
+  --yellow:var(--light-blue);
   --paper:#fffaf2;
   --serif:'DM Serif Display',Georgia,serif;
   --sans:'DM Sans',Arial,sans-serif
@@ -37,8 +40,8 @@ button {
 }
 
 ::selection {
-  background:#f4ba8b;
-  color:#211f1c
+  background:var(--light-blue);
+  color:var(--navy)
 }
 
 .section-shell {
@@ -62,7 +65,7 @@ button {
 }
 
 .announcement {
-  background:var(--teal);
+  background:var(--navy);
   color:#fff8ed;
   text-align:center;
   font-size:11px;
@@ -71,7 +74,7 @@ button {
 }
 
 .sparkle {
-  color:#f4d38c;
+  color:var(--light-blue);
   padding:0 12px
 }
 
@@ -97,7 +100,7 @@ button {
 
 .brand-symbol {
   font-size:36px;
-  color:var(--orange);
+  color:var(--mid-blue);
   line-height:1
 }
 
@@ -128,7 +131,7 @@ button {
 }
 
 .site-nav>a:hover {
-  color:#cb5838
+  color:var(--mid-blue)
 }
 
 .site-nav .nav-pill {
@@ -170,7 +173,7 @@ button {
 
 .eyebrow-line {
   height:1px;
-  background:var(--orange);
+  background:var(--mid-blue);
   width:35px
 }
 
@@ -188,12 +191,12 @@ button {
 
 .hero h1 em,.about h2 em,.events h2 em,.calendar-section h2 em,.leadership-section h2 em,.support h2 em,.connect-section h2 em {
   font-weight:400;
-  color:var(--orange)
+  color:var(--mid-blue)
 }
 
 .underline-word {
   text-decoration:underline;
-  text-decoration-color:#e8b55f;
+  text-decoration-color:var(--light-blue);
   text-decoration-thickness:5px;
   text-underline-offset:9px
 }
@@ -230,7 +233,7 @@ button {
 }
 
 .button-dark {
-  background:var(--ink);
+  background:var(--navy);
   color:white
 }
 
@@ -253,7 +256,7 @@ button {
 .handwritten-note {
   font-family:var(--serif);
   font-style:italic;
-  color:#ad725f;
+  color:var(--mid-blue);
   font-size:16px;
   transform:rotate(-5deg);
   margin:40px 0 0 40px
@@ -272,7 +275,7 @@ button {
 
 .art-orbit {
   position:absolute;
-  border:1px solid #e3b9a1;
+  border:1px solid #a9d6e5;
   border-radius:50%;
   transform:rotate(-17deg);
   width:100%;
@@ -284,19 +287,19 @@ button {
   transform:rotate(30deg);
   width:88%;
   height:425px;
-  border-color:#d6c3b0
+  border-color:#7fb4d2
 }
 
 .hero-photo-frame {
-  width: min(70%, 320px);
-  height: 365px;
-  background: #f2cbb4;
-  padding: 0;
-  transform: rotate(5deg);
-  box-shadow: 14px 17px 0 #e9ddc8;
-  z-index: 2;
-  overflow: hidden;
-  position: relative;
+  width:min(70%,320px);
+  height:365px;
+  background:var(--light-blue);
+  padding:0;
+  transform:rotate(5deg);
+  box-shadow:14px 17px 0 #d9e8f1;
+  z-index:2;
+  overflow:hidden;
+  position:relative
 }
 
 .photo-placeholder {
@@ -327,11 +330,11 @@ button {
 }
 
 .hero-photo-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  object-position:center
 }
 
 .art-sticker {
@@ -342,16 +345,16 @@ button {
 }
 
 .sticker-top {
-  font-size: 20px;
-  top: 0;
-  right: 0;
-  transform: rotate(9deg);
-  color: #b24e35;
-  z-index: 5;
+  font-size:20px;
+  top:0;
+  right:0;
+  transform:rotate(9deg);
+  color:var(--mid-blue);
+  z-index:5
 }
 
 .sticker-bottom {
-  background:var(--teal);
+  background:var(--navy);
   color:white;
   border-radius:50%;
   width:125px;
@@ -366,13 +369,13 @@ button {
 }
 
 .hero-flower {
-  position: absolute;
-  z-index: 5;
-  color: var(--yellow);
-  font-size: 80px;
-  right: 0;
-  bottom: 0;
-  transform: rotate(15deg);
+  position:absolute;
+  z-index:5;
+  color:var(--light-blue);
+  font-size:80px;
+  right:0;
+  bottom:0;
+  transform:rotate(15deg)
 }
 
 .hero-side-note {
@@ -387,8 +390,8 @@ button {
 
 .ticker {
   overflow:hidden;
-  background:var(--orange);
-  color:#291f19;
+  background:var(--navy);
+  color:var(--cream);
   padding:17px 0;
   white-space:nowrap
 }
@@ -403,7 +406,7 @@ button {
 }
 
 .ticker span {
-  color:#fff1dd;
+  color:var(--light-blue);
   font-size:18px;
   padding:0 12px
 }
@@ -420,7 +423,7 @@ button {
 }
 
 .section-index {
-  color:#a8583a
+  color:var(--mid-blue)
 }
 
 .about-grid {
@@ -438,7 +441,7 @@ button {
 .drawn-smile {
   font-family:var(--serif);
   font-size:110px;
-  color:#e2ae6d;
+  color:var(--light-blue);
   line-height:.9;
   margin:10px 0 0 115px;
   transform:rotate(-22deg)
@@ -463,14 +466,14 @@ button {
 }
 
 .about-text .lead em {
-  color:#bb6547
+  color:var(--mid-blue)
 }
 
 .editable-note {
-  background:#f0e7d8;
+  background:#e7f1f7;
   border-left:3px solid var(--orange);
   padding:12px 15px;
-  color:#766c60!important;
+  color:#31546a!important;
   font-style:italic
 }
 
@@ -509,7 +512,7 @@ button {
 }
 
 .events {
-  background:#e9e0d2;
+  background:#e8edf0;
   padding:105px 0 115px
 }
 
@@ -568,14 +571,14 @@ button {
 }
 
 .garba-graphic {
-  background:#e78253;
-  color:#f9df97
+  background:var(--light-blue);
+  color:var(--navy)
 }
 
 .garba-graphic:before,.garba-graphic:after {
   content:'';
   position:absolute;
-  border:2px solid #f3ca8f;
+  border:2px solid #f8f3e9;
   border-radius:50%;
   height:370px;
   width:370px
@@ -625,8 +628,8 @@ button {
 }
 
 .gala-graphic {
-  background:#234e4b;
-  color:#f5cf9c;
+  background:var(--navy);
+  color:var(--light-blue);
   flex-direction:column
 }
 
@@ -635,7 +638,7 @@ button {
   position:absolute;
   width:230px;
   height:330px;
-  border:1px solid #d9b67a;
+  border:1px solid var(--light-blue);
   border-radius:50% 50% 0 0;
   bottom:-210px
 }
@@ -673,7 +676,7 @@ button {
 
 .event-kicker {
   font-size:10px;
-  color:#a65f44;
+  color:var(--mid-blue);
   font-weight:700;
   letter-spacing:.11em
 }
@@ -692,7 +695,7 @@ button {
 
 .event-details p strong {
   font-weight:500;
-  color:#9b735f
+  color:var(--mid-blue)
 }
 
 .event-link {
@@ -719,7 +722,7 @@ button {
 }
 
 .calendar-doodle {
-  background:#ecd2be;
+  background:#d8edf7;
   min-height:400px;
   display:grid;
   place-items:center;
@@ -728,8 +731,8 @@ button {
 }
 
 .calendar-doodle:before,.calendar-doodle:after {
-  content:'âœ³';
-  color:#ce876b;
+  content:'✳';
+  color:var(--mid-blue);
   position:absolute;
   font-size:130px;
   left:-36px;
@@ -741,13 +744,13 @@ button {
   top:auto;
   right:-20px;
   bottom:-65px;
-  color:#deae7a
+  color:var(--light-blue)
 }
 
 .doodle-page {
   transform:rotate(-8deg);
   background:#fffbf0;
-  box-shadow:10px 14px 0 #ba785d;
+  box-shadow:10px 14px 0 #7da9cb;
   width:230px;
   height:265px;
   text-align:center;
@@ -797,7 +800,7 @@ button {
 }
 
 .leadership-section {
-  background:#f1e4d4;
+  background:#e7eff5;
   padding:105px 0 100px
 }
 
@@ -825,26 +828,28 @@ button {
 .leader-photo img {
   width:100%;
   height:100%;
-  object-fit:cover
+  object-fit:cover;
+  transform:none;
+  filter:none
 }
 
 .shade-one {
-  background:#deaa91;
+  background:transparent;
   color:#8b503b
 }
 
 .shade-two {
-  background:#e4c879;
+  background:transparent;
   color:#795b30
 }
 
 .shade-three {
-  background:#a9b8aa;
+  background:transparent;
   color:#355a53
 }
 
 .shade-four {
-  background:#c6aca7;
+  background:transparent;
   color:#784c4a
 }
 
@@ -855,18 +860,18 @@ button {
 
 .leader-card p {
   font-size:12px;
-  color:#826b5b;
+  color:#526579;
   margin:0
 }
 
 .leader-note {
   font-size:11px;
-  color:#9c7e6a;
+  color:#526579;
   margin-top:34px
 }
 
 .support {
-  background:var(--teal);
+  background:var(--navy);
   color:#fff6e7;
   display:grid;
   grid-template-columns:.85fr 1.15fr;
@@ -883,7 +888,7 @@ button {
 }
 
 .support .section-index {
-  color:#f1c58a
+  color:var(--light-blue)
 }
 
 .support h2 {
@@ -892,7 +897,7 @@ button {
 }
 
 .support h2 em {
-  color:#f0bb94
+  color:var(--light-blue)
 }
 
 .support p {
@@ -912,13 +917,13 @@ button {
   font-family:Georgia,serif;
   font-size:350px;
   line-height:1;
-  color:#f2bf9b;
+  color:var(--light-blue);
   transform:rotate(-12deg)
 }
 
 .little-sparkle {
   position:absolute;
-  color:#f6ce72;
+  color:var(--light-blue);
   font-size:100px;
   right:12%;
   top:0
@@ -964,7 +969,7 @@ button {
 
 .social-links a:hover {
   padding-left:10px;
-  color:#b75f41
+  color:var(--mid-blue)
 }
 
 .social-links a span:last-child {
@@ -972,7 +977,7 @@ button {
 }
 
 footer {
-  background:#292d29;
+  background:var(--navy);
   color:#f4efe7
 }
 
@@ -990,7 +995,7 @@ footer {
 }
 
 .footer-brand span {
-  color:#e7a17d;
+  color:var(--light-blue);
   padding-left:7px
 }
 
@@ -1278,58 +1283,22 @@ footer a {
 }
 
 /* Tablet and mobile */
-@media (max-width: 1100px) {
-  .leadership-bottom .leader-card {
-    width: 180px;
-  }
-}
-
 @media (max-width: 600px) {
   .leadership-row {
     gap: 20px;
   }
   .leadership-top .leader-card,
-
-.leadership-bottom .leader-card {
+  .leadership-bottom .leader-card {
     width: 100%;
     max-width: 260px;
   }
 }
 
-/* Remove colored backgrounds */
-.leader-photo.shade-one,
-.leader-photo.shade-two,
-.leader-photo.shade-three,
-.leader-photo.shade-four,
-.leader-photo.shade-five {
-  background: transparent;
-}
-
-/* Keep photo heights consistent on mobile */
-@media (max-width: 760px) {
-  .leader-photo {
-    height: 210px;
-  }
-}
-
-@media (max-width: 420px) {
-  .leader-photo {
-    height: 165px;
-  }
-}
-
-/* MannMukti kite logo */
-
+/* Official chapter kite in the site navigation */
 .brand-logo {
   width: 42px;
   height: 48px;
   object-fit: contain;
   display: block;
   flex-shrink: 0;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
