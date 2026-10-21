@@ -731,7 +731,7 @@ button {
 }
 
 .calendar-doodle:before,.calendar-doodle:after {
-  content:'✳';
+  content:'\2733\FE0E';
   color:var(--mid-blue);
   position:absolute;
   font-size:130px;
